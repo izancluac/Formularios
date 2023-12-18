@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Izan Lopez">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+
+    <form action="" >
+        <div>
+            <label for="name">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="name" value="" size="25" maxlength="15"  >
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <br>
+            <input type="text" name="Apellidos" id="apellidos" value="" size="35" maxlength="25"  > 
+            <br>        
+            <label for="contraseña">Contraseña</label>
+            <br>
+            <input type="password" name="Contraseña" id="contraseña" value="" size="25" maxlength="15"  >
+            <br>           
+            <label for="dni">DNI</label>
+            <br>
+            <input type="text" name="identificacion" id="dni" value="" size="15" maxlength="10"  >
+            <br>
+            <label for="genero">Sexo</label>
+            <br>
+            
+            <input type="radio" name="Hombre" id="macho"value checked >
+            <label for="macho">hombre</label>
+            <br>
+            
+            <input type="radio" name="Hembra" id="hembra" value="" checked>
+            <label for="hembra">mujer</label>
+            <br>
+            <label for="fichero">Incluir mi foto</label>
+            <input type="file" name="Fichero" id="fichero" >
+            <br><br>
+            <input type="checkbox" name="subscripcion" id="suscribete" value="">
+            <label for="suscribete">Suscribirme al boletín de novedades</label>
+            <br><br>
+            <input type="submit" name="Guardar" id="save" value="Guardar cambios" size="15">
+            <input type="reset" name="Borrar" id="delete" value="Borrar los datos introducidos" size="25">
+        </div>
+            
+    </form>
+
+    <br>
+    <hr>
+    <br>
+    <h1>::Formulari de registre al Portal::</h1>
+    <form action="">
+        
+        <fieldset >
+            <legend>Dades personals</legend>
+            <label for="nom" >Nom:</label>
+            <input type="text" name="nombre" id="nom" value="" size="25" maxlength="15" placeholder="Nom">
+            <label for="apellidos">Cognoms:</label>
+            <input type="text" name="Apellidos" placeholder="Cognoms" id="apellidos" size="25" maxlength="35" value="">
+            <br>
+            <br>
+            <label for="dni">DNI:</label>
+            <input type="text" name="identificacion" id="dni" placeholder="P.ex:45987989X" size="30" maxlength="20" >
+            <br><br>
+            <label for="user">Username:</label>
+            <input type="text" name="nombre de usuario" id="user" size="25" maxlength="10" value="">
+            <label for="clau">Clau</label>
+            <input type="password" name="contraseña" id="clau" size="25" maxlength="25">
+            <label for="Repetirclau">Repetir Clau:</label>
+            <input type="password" name="Repetircontraseña" id="Repetirclau" size="25" maxlength="25">
+            <br><br>
+            <label for="correo">E-Correu:</label>
+            <input type="email" placeholder="usuari@domini.org" id="correo" name="Correo" size="25">
+            <label for="edad">Franja d'edat:</label>
+            <select name="edades" id="edad">
+                <option value="Menor que 16">Menor que 16</option>
+                <option value="Mayor que 16 o igual">Mayor o igual que 16</option>
+            </select>
+            <label for="genero">Sexe:</label>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="macho" id="hombre" value="Home">
+            <label for="hembra">Dona</label>
+            <input type="radio" name="hembra" id="mujer" value="Dona" >
+            <br><br>
+            <label for="codi">Codi País</label>
+            <input type="number" name="codigo" id="codi" placeholder="Codi del pais dos caracters ">
+            <label for="zip">Codi ZIP</label>
+            <input type="number" name="Codigo" id="zip" placeholder="El codi postal" value="" >
+            <br><br>
+            <label for="imagen">Imatge Personal:</label>
+            <input type="file" name="fichero" id="imagen" value="Tria un fitxer">
+        </fieldset>
+        <fieldset>
+            <legend>Altres dades d'interes</legend>
+           <label for="interese">Interessos</label><br>
+            <input type="checkbox" name="css" id="CSS" value="">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="html" id="HTML" value="">
+            <label for="HTML">HTML5</label>
+            <input type="checkbox" name="java" id="javascript" value="">
+            <label for="javascript">Javascript</label>
+            <br><br>
+            <label for="coneiximents">Coneiximents:</label><br>
+            <input type="checkbox" name="xarxes" id="xarxes" value="">
+            <label for="xarxes">Xarxes Socials</label>
+            <input type="checkbox" name="pr" id="programacio" value="">
+            <label for="programacio">Programació HTML</label>
+            <input type="checkbox" name="csa" id="cesaesa" value="">
+            <label for="cesaesa">Programació CSS</label>
+            <input type="checkbox" name="dsee" id="diseño" value="">
+            <label for="diseño"> Disseny</label>
+            <br><br>
+            <label for="comen">Comentaris:</label>
+            <br>
+            <textarea name="texto" id="comen" cols="30" rows="10"> Aqui disposeu d'espai per escriure</textarea>
+
+        </fieldset>
+        <input type="submit" name="enviar" id="enviado" value="Enviar">
+        <input type="reset" name="borra" id="delete" value="Esborrar">
+
+
+    </form>
+
+    <br><hr><br><br>
+    <form action="">
+        <h1>Rellena tu CV</h1>
+       <br><br>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="provincia">Provincia</label><br>
+            <select name="select" id="provincia" > 
+                <option value="" selected="selected" >Select</option>
+                <option value="Valencia" >Valencia</option>
+                <option value="Castellon">Castelló</option>
+                <option value="Huesca">Huesca</option>
+            </select>
+            <br><br>
+            <label for="dia"> Fecha de nacimiento</label><br>
+            <input type="numbre" name="dia" id="Dia">
+            <label for="mes">de</label>
+            <select name="seleccionar" id="mes">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="MArzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+
+            </select>
+            <label for="año" >de</label>
+            <input type="number" name="numero" id="año " value="">
+            <br><br>
+            <label for="tema">Tema de interés</label> <br>
+                >
+            <select name="Temas" id="tema" size="6">
+                <option value="Administracion">Administracion de base de datos</option>
+                <option value="analisi">Analisis y programacion</option>
+                <option value="Arc">Arquitectura</option>
+                <option value="calidad">Calidad</option>
+                <option value="ERP">ERP,CRM,Bunisses Intelligence</option>
+            </select>
+         
+        </fieldset>
+
+    </form>
+    <br><hr><br><br>
+    <form action="">
+        <h1>Información sobre el producto</h1>
+        <br>
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="Mayuscuña" id="nombre" value="">
+            <br><br>
+            <label for="Descripcion">Descripción</label><br>
+            <textarea name="desc" id="Descripcion" cols="45" rows="10"></textarea>
+            <br>
+            <label for="foto">Foto</label>
+            <input type="file" name="photo" id="foto" value="">
+            <br>
+            <input type="checkbox" name="añadir" id="visitas" value="">
+            <label for="visitas">Añadir contador de visitas</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="dinero">Precio</label>
+            <input type="number" name="pasta" id="dinero" value="">
+            <label for="dinero">€</label>
+            &nbsp; &nbsp; &nbsp;
+            <label for="impostos">Impuestos</label>
+            <select name="inpuestos" id="impostos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select>
+            <br><br>
+            <label for="promocionar ">Promoción</label><br>
+            <input type="radio" name="ningu" id="ninguno">
+            <label for="ninguno">Ninguno</label>
+            <br>
+            <input type="radio" name="transport" id="transporte">
+            <label for="Transporte gratuito">Transporte gratuito</label>
+            <br>
+            <input type="radio" name="descuento" id="Descuento" >
+            <label for="Descuento">Descuento 5%</label>
+            
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
